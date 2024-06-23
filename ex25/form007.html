@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="" method="post">
+        <!--Todo formulário que passar de 3000bytes não será enviado se o formulário usar o método GET, para enviar formulário com mais de 3000bytes use formulários com o método POST.-->
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="CE">Ceará</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="PROF">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form> <br>
+
+    <h2>Teste pessoal</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iestado">Estado</label>
+            <input type="text" name="estado" id="iestado" list="lstestado">
+            <datalist id="lstestado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="CE">Ceará</option>
+                    <option value="AL">Alagoas</option>
+
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
