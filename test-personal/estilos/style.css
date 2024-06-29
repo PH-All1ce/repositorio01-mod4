@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    background-color: lightgray;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    padding: 10px;
+    background-color: gray;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
