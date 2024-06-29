@@ -39,18 +39,6 @@ nav a {
    font-weight: bold
 }
 
-.dropdonw {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    margin: auto;
-    padding: 10px;
-}
-
-ul {
-    list-style-type: none;
-}
-
 main {
     width: 92vw;
     margin: auto;
